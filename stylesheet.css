@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background: whitesmoke;
+    color: black;
+} 
+.container{
+    background: whitesmoke;
+    width: 90%;
+    margin: auto;
+}
+
+
+#header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: .2em;
+    z-index: 1;
+    
+   
+}
+#header-img{
+    max-width: 100%;
+    height: 100%;
+}
+#nav-bar{
+    /* background: green; */
+    width: 100px;
+    margin-right: 290px;
+}
+#nav-links{
+    display: flex;
+    justify-content: space-between;
+  }
+  #nav-links li{
+      list-style: none;
+  }
+  #nav-links li a{
+      list-style: none;
+      text-decoration: none;
+      color: black;
+      font-size: 1.5em;
+  }
+.nav-link{
+    margin-right: 20px;
+    margin: 0 20px;
+}
+#welcome-shoe{
+    width: 100%;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+#welcoming{
+    position: relative;
+}
+#form{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    right: 100px;
+    
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+
+
+}
+#email{
+    padding: 10px;
+
+}
+#submit:hover{
+        background: gray;
+
+}
+#submit{
+    width: 60%;
+    margin: auto;
+    padding: 6px;
+    margin-top: 10px;
+    background: white;
+    border: 1px solid black;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 10px;
+    justify-content: center;
+    border: 1px solid white;
+    position: relative;
+
+     
+}
+
+
+.item{
+    width: 300px;
+    height: auto;
+    margin: 1px auto;
+    border: black solid 1px;
+    background: white;
+    padding: 20px;
+    
+
+}
+footer .first .row-one {
+    justify-self: start;
+}
+footer .first{
+    margin: 100px 0 0 0;
+    background: rgb(189, 189, 189);
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr) );
+    padding: 10px 15px;
+    border: black solid 1px;
+    grid-gap: 10px;
+    
+}
+footer .first p{
+    font-size: 13px;
+    
+}
+hr{
+    width: 100%;
+}
+h5{
+    font-size: large;
+    padding: 10px;
+   
+}
+footer .first .head{
+
+    font-weight: 900;
+    font-size: 19px;
+}
+.other-footer a:hover{
+    color: black;
+    border: none;
+    border-top: blue solid 1px;
+}
+.other-footer a{
+    color: white;
+    list-style: square;
+    margin-right: 10px;
+    padding-left: 30px;
+    font-size: .8em;
+}
+footer .last{
+    background: rgb(116, 116, 116);
+    color: white;
+    border: black solid 1px;
+    border-top: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+ a {
+    color: black;
+    text-decoration: none;
+}
+ a:hover {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+
+}
+.intro{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    
+
+    display: flex;
+    flex-direction: column;
+    font-family: cursive;
+    border: rgb(120, 116, 116) solid 1px;
+    cursor: pointer;
+    
+
+  
+}
+.intro h3{
+    text-align: center;
+      padding: 10px;
+    color: rgb(27, 16, 16);
+   text-shadow: 1px 1px rgb(177, 148, 148);
+    padding-left: 20px;
+
+
+    
+
+}
+.intro  hr{
+    opacity: .2;
+}
+
+.intro h3:hover{
+    text-align: left;
+    text-shadow: 1px 1px rgb(235, 200, 197);
+    width: 90%;
+    padding: 10px;
+    transform: scale(1.1);    
+    transition: all 1s ease-out;
+    padding-left: 70px;
+
+}
+#video{
+    border: rgb(28, 30, 28) solid 1px;
+    margin-bottom: 20px;
+}
+.product-inner{
+    display: flex;
+    flex-direction: column;
+}
+.buy button:hover{
+    border: .2px solid hsl(0, 90%, 4%) ;
+    background-color: hsl(0, 50%, 92%) ;
+    color: rgb(10, 1, 1);
+}
+.buy button{
+    width: 100%;
+    border: .2px solid black;
+    padding: 10px ;
+
+}
+.price {
+    position: absolute;
+    background-color: rgb(116, 116, 116, .2);;
+    color: rgb(43, 30, 30);
+    
+    padding: 10px 30px;
+    margin: 0;
+    
+    
+
+}
+
+@media (max-width: 400px){
+    #nav-links li a{
+        font-size: .85em;
+      }
+      #nav-bar{
+         margin-right: 220px;
+      }
+}
+@media (max-width: 390px){
+    #nav-links li a{
+        font-size: .5em;
+      }
+      #nav-bar{
+         margin-right: 550px;
+      }
+      #header{
+        flex-direction: column;
+       
+    }
+}
+@media (max-width: 700px){
+    #nav-links li a{
+      font-size: .9em;
+    }
+    #nav-bar{
+       margin-right: 140px;
+    }
+}
+
+

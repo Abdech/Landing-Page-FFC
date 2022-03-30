@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(198, 245, 245);
+    color: hsl(180, 88%, 3%);
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.container {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header "
+      "advert content"
+      "content"
+      "footer";
+  }
+
+  
+#header{
+    /* grid-area: header; */
+}
+#nav-bar{
+    grid-area: header;
+}
